@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- En-tête de la page -->
+    <meta charset="utf-8" />
+    <!-- C'est l'encodage de mon site -->
+    <meta name='description' content="Instructions à connaître en python" />
+    <meta name='keywords' content="NSI, informatique, python" />
+    <link rel="stylesheet" href="stylesheets/style.css" />
+    <!--import des styles en .css-->
+    <title>N.S.I.</title>
+    <!--C'est le titre de la page (écrit en haut de l'onglet du navigateur) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="javascript/continuitePedagogique.js"></script>
+</head>
+
+<header>
+    <span id="voirCompteur">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+    <p id="counter"></p>
+    <h2>Continuité pédagogique en 1èreNSI</h2>
+</header>
+
+<body>
+    <p>Ce site reprend ce qui est présent sur l'ENT <a href="http://lyceeconnecte.fr" target="_blank">lyceeconnecte</a></p>
+    <p>Il permet d'accéder facilement au cours, l'accessibilité à l'ENT risquant d'être mise à dure épreuve suite au nombre très important de connexions.</p>
+    <p>Mettez l'adresse de ce site dans vos favoris, pour y accéder directement.</p>
+    <!--J'ai trouvé le bandeau de navigation ici :
+      https://www.pierre-giraud.com/html-css-apprendre-coder-cours/creation-menu-deroulant/
+       -->
+    <nav>
+        <ul>
+            <li class="deroulant"><a href="#" id="navreseaux">Réseaux &ensp;</a>
+                <ul class="sous">
+                    <li id="navFilius"><a href="#">Filius</a></li>
+                    <li id="navcoursReseaux"><a href="#">Cours Réseaux</a></li>
+                </ul>
+            </li>
+            <!---<li class="deroulant"><a href="#" id="navtuplesListes">tuples et listes &ensp;</a>
+                <ul class="sous">
+                    <li id="navtuples"><a href="#">tuples</a></li>
+                    <li id="navlistes"><a href="#">listes</a></li>
+                </ul>
+            </li>
+            <li class="deroulant"><a href="#" id="navdictionnaires">dictionnaires &ensp;</a>
+                <ul class="sous">
+                    <li id="navdicos"><a href="#">Utilisation</a></li>
+                    <li id="navdonnees"><a href="#">Fichier de données</a></li>
+                </ul>
+            </li>
+            <li class="deroulant"><a href="#" id="navimagesExemples">Exemples en image &ensp;</a>-->
+            <!--<ul class="sous">
+              <li id="navimagesVariables"><a href="#">variables</a></li>
+              <li id="navimagesBoucles"><a href="#">boucles</a></li>
+              <li id="navimagesConditions"><a href="#">conditions</a></li>
+              <li id="navimagesTuples"><a href="#">tuples</a></li>
+              <li id="navimagesListes"><a href="#">listes</a></li>
+            </ul>-->
+            </li>
+        </ul>
+    </nav>
+
+    <div id='reseaux'>
+        <h1 id="Introduction">Chapitre VIII - Réseaux et Internet</h1>
+
+        <div id="Filius">
+            <h2>activité Filius</h2>
+            <p>Voici l'activité proposée : <a href="documents/2019_1NSI_08_activiteFilius.pdf" target="_blank">activité Filius</a></p>
+            <p>Et les documents à récupérer : <a href="documents/fichiersActiviteFilius.zip" download="fichiersActiviteFilius">documents à télécharger</a></p>
+        </div>
+        <div id="coursReseaux">
+            <h2>cours sur les réseaux</h2>
+            <p>Voici le fichier que je comptais vous distribuer en classe : <a href="documents/2019_1NSI_08_Reseaux_eleve.pdf" target="_blank">cours élèves</a></p>
+            <p>Je l'ai complété : <a href="documents/2019_1NSI_08_ReseauxComplete.pdf" target="_blank">cours réseaux</a></p>
+            <p>Pour mieux retenir ce qui est important, vous pouvez partir de la partie vierge (premier fichier) et vous le complétez avec le deuxième...</p>
+            <p>Dans ce cours, j'ai mis en couleurs les choses à retenir et surligné d'autres informations importantes.</p>
+            <p>Pour l'explication du "bit alterné" dans le protocole TCP, vous devez connaitre ce principe de vérification (c'est dans le programme) et savoir qu'il a une faille.
+                <ul>
+                    <li>Je l'ai mis dans le <a href="documents/NSI_bitAlterne.pdf" target="_blank">pdf</a>.</li>
+                    <li>J'ai également créé une vidéo qui reprend toutes les étapes décrites dans ce pdf.<br/>
+                        <video controls width="467" height="350"><source src="videos/NSI_bitAlterne.mp4"></video>
+                    </li>
+                </ul>
+            </p>
+            <p>Vous pourrez par ailleurs être interrogés sur les commandes qui peuvent être écrites dans une console (ou un shell) : ping, traceroute (ou tracert), ipconfig (ou ip).</p>
+        </div>
+
+
+</body>
+
+</html>
