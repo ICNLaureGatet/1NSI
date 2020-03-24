@@ -1,8 +1,9 @@
-let listeChap = ["reseaux"];
+let listeChap = ["reseaux", "IHMWeb"];
 let listeSousPartie = [
-    ["Filius", "coursReseaux"]
-];
-let contenuDiv = {}; //j'en fais un objet plutôt qu'une liste
+    ["Filius", "coursReseaux"],
+    ["HTML", "CSS", "Javascript"]
+]
+let contenuDiv = {} //j'en fais un objet plutôt qu'une liste
 
 
 function initialization() {
@@ -36,10 +37,7 @@ function initialization() {
     for (prop in contenuDiv) {
         document.getElementById("nav" + String(prop)).onclick = function() {
             let idtexte = this.id.substring(3); //L'id du menu est de la forme nav... donc j'enlève les 3 premiers caractères
-            document.getElementById("divConteneur").innerHTML = contenuDiv[idtexte];
-            if (idtexte === "imagesExemples") {
-                actionBtns(); //JE remets les actions sur les boutons
-            }
+            document.getElementById("divConteneur").innerHTML = contenuDiv[idtexte]
         }
     }
     const counter = document.getElementById("counter")
