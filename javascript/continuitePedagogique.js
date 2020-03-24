@@ -12,26 +12,26 @@ function initialization() {
     //Tout d'abord ceux des chapitres (de listeChap)
     for (let i = 0; i < listeChap.length; i++) {
         console.group("listeChap[i]:", listeChap[i])
-        contenuDiv[listeChap[i]] = document.getElementById(listeChap[i]).innerHTML;
+        contenuDiv[listeChap[i]] = document.getElementById(listeChap[i]).innerHTML
     }
     //Et ceux des sous-parties
-    for (i = 0; i < listeChap.length; i++) {
+    for (let i = 0; i < listeChap.length; i++) {
         if (listeSousPartie[i].length > 0) {
             for (let j = 0; j < listeSousPartie[i].length; j++) {
                 contenuDiv[listeSousPartie[i][j]] = document.getElementById(listeSousPartie[i][j]).innerHTML;
             }
         }
-        contenuDiv[listeChap[i]] = document.getElementById(listeChap[i]).innerHTML;
+        contenuDiv[listeChap[i]] = document.getElementById(listeChap[i]).innerHTML
     }
     //On détruit enfin tout ce que contenait la page
-    for (i = 0; i < listeChap.length; i++) {
+    for (let i = 0; i < listeChap.length; i++) {
         document.getElementById(listeChap[i]).innerHTML = ""
     }
 
     //Je crée enfin une div qui accueillera le contenu de ce qui sera affiché
-    let newDiv = document.createElement('div');
-    newDiv.id = "divConteneur";
-    document.body.appendChild(newDiv);
+    let newDiv = document.createElement('div')
+    newDiv.id = "divConteneur"
+    document.body.appendChild(newDiv)
 
     //gestion du clic sur un bouton
     for (prop in contenuDiv) {
