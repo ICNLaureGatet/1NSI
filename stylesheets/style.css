@@ -12,6 +12,8 @@ body {
 body {
     padding: 15px;
     color: rgb(10, 20, 25);
+    visibility: hidden;
+    /*je le rends invisible au début, mais cela redeviendra visible avec le js*/
 }
 
 header {
