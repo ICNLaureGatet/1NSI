@@ -1,4 +1,4 @@
-let listeChap = ["reseaux", "IHMWeb"];
+let listeChap = ["reseaux", "IHMWeb"]
 let listeSousPartie = [
     ["Filius", "coursReseaux"],
     ["HTML", "CSS", "Javascript"]
@@ -25,6 +25,7 @@ function initialization() {
     }
     //On détruit enfin tout ce que contenait la page
     for (let i = 0; i < listeChap.length; i++) {
+        console.log("listeChap[i];",listeChap[i],i)
         document.getElementById(listeChap[i]).innerHTML = ""
     }
 
