@@ -27,7 +27,7 @@ function initialization() {
     for (let i = 0; i < listeChap.length; i++) {
         document.getElementById(listeChap[i]).innerHTML = ""
     }
-
+    document.querySelector('body').style.visibility = "visible"
     //Je crée enfin une div qui accueillera le contenu de ce qui sera affiché
     let newDiv = document.createElement('div')
     newDiv.id = "divConteneur"
