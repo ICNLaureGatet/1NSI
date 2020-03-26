@@ -46,7 +46,7 @@ function initialization() {
     const counter = document.getElementById("counter")
     $('#counter').hide()
 
-    /*const updateCounter = async() => {
+    const updateCounter = async() => {
         const data = await fetch("https://api.countapi.xyz/hit/1NSICounter/visits")
         const count = await data.json()
         counter.innerHTML = count.value
@@ -54,7 +54,7 @@ function initialization() {
     updateCounter()
     $('#voirCompteur').on('click', function() {
         $('#counter').show()
-    })*/
+    })
 
 }
 
