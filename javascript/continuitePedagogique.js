@@ -38,6 +38,9 @@ function initialization() {
         document.getElementById("nav" + String(prop)).onclick = function() {
             let idtexte = this.id.substring(3); //L'id du menu est de la forme nav... donc j'enlève les 3 premiers caractères
             document.getElementById("divConteneur").innerHTML = contenuDiv[idtexte]
+            let tmp = document.querySelector('footer')
+            document.querySelector('body').removeChild(document.querySelector('footer'))
+            document.querySelector('body').appendChild(tmp)
         }
     }
     const counter = document.getElementById("counter")
