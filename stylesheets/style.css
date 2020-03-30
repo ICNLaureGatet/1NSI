@@ -216,6 +216,10 @@ nav>ul li:hover .sous {
     left: 0px;
 }
 
+footer {
+    padding-top: 20px;
+}
+
 #travailRendre {
     margin: 0;
     padding: 0;
