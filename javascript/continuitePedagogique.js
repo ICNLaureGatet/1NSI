@@ -1,7 +1,8 @@
-let listeChap = ["reseaux", "IHMWeb", "GenumSI"];
+let listeChap = ["reseaux", "IHMWeb", "systExplo", "GenumSI"];
 let listeSousPartie = [
     ["Filius", "coursReseaux"],
     ["HTML", "CSS", "Javascript"],
+    ["infosGen", "commandes"],
     []
 ]
 let contenuDiv = {} //j'en fais un objet plutôt qu'une liste
