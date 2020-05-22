@@ -8,6 +8,6 @@
 
 
 	<body>
-		<p>Bonjour, il est : <?php echo date('H:i:s');?></p>
+		Bonjour, il est : <?php echo date('H:i:s'); ?>
 	</body>
 </html>
