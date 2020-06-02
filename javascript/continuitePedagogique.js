@@ -1,4 +1,4 @@
-let listeChap = ["reseaux", "IHMWeb", "systExplo", "CaptActio", "Algorithmique", "ClientServeur", "GenumSI"];
+let listeChap = ["reseaux", "IHMWeb", "systExplo", "CaptActio", "Algorithmique", "ClientServeur", "projetImage", "GenumSI"];
 let listeSousPartie = [
     ["Filius", "coursReseaux"],
     ["HTML", "CSS", "Javascript"],
@@ -6,6 +6,7 @@ let listeSousPartie = [
     ["CapteursArduino", "Arduino", "EntreesSorties"],
     ["RechercheDicho", "Algoknn", "AlgoGloutons"],
     ["RequeteHTTP", "Formulaire"],
+    [],
     []
 ]
 let contenuDiv = {} //j'en fais un objet plutôt qu'une liste
