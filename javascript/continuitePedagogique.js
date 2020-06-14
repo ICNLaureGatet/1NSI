@@ -47,6 +47,7 @@ function initialization() {
             let tmp = document.querySelector('footer')
             document.querySelector('body').removeChild(tmp)
             document.querySelector('body').appendChild(tmp)
+            document.querySelector('#divConteneur').style.marginLeft=(Number(document.querySelector('nav').offsetWidth)+15)+'px'
         }
     }
     const counter = document.getElementById("counter")
