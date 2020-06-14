@@ -154,6 +154,7 @@ nav {
 
 nav ul {
     list-style-type: none;
+	padding-left: 8px;
 }
 .deroulant{
     display:block;
